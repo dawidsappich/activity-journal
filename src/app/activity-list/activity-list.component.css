@@ -1,0 +1,41 @@
+h1 {
+	font-size: 3rem;
+	background-color: rgb(245, 219, 39);
+	display: inline-block;
+	padding: 10px 25px;
+	margin: 25px 0 0 25px;
+}
+
+.activityInfo {
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.ui.table, .activityInfo {
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ui.table thead th, .ui.table thead {
+	background-color: rgba(0,0,0,0);
+}
+
+.ui.table a {
+	color: #542DE8;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+.ui.table a:hover {
+	color: #CD2EAE;
+}
+
+.ui.padded.table {
+	margin-top: 0;
+}
+
+.totals {
+	font-size: 2rem;
+	color: #542DE8;
+	font-family: 'Exo', sans-serif;
+}

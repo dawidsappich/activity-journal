@@ -1,3 +1,26 @@
-<p>
-  activity-list works!
-</p>
+<div class="ui container">
+  <h1>My Activities</h1>
+    <div class="activityInfo">
+      <p>Du hast ingesamt <span class="totals">{{totalActivities}}</span> Aktivitäten mit einer Gesamtstrecke von <span class="totals">{{totalDistance}} km</span> erfasst.</p>
+    </div>
+    <table class="ui padded table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+          <th>Comments</th>
+          <th>Distance</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let activity of activities">
+          <td><a href="">{{activity.title}}</a></td>
+          <td>{{activity.date | date:"dd.MM.yyyy" }}</td>
+          <td>{{activity.comments}}</td>
+          <td>{{activity.distance}} km</td>
+          <td>{{activity.duration}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
