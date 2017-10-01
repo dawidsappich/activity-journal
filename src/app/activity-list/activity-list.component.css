@@ -21,10 +21,9 @@ h1 {
 }
 
 .ui.table a {
-	color: #542DE8;
-	font-size: 1.2rem;
-	font-style: italic;
+	color: #4D1E9D;
 }
+
 
 .ui.table a:hover {
 	color: #CD2EAE;
@@ -36,6 +35,6 @@ h1 {
 
 .totals {
 	font-size: 2rem;
-	color: #542DE8;
+	color: #4D1E9D;
 	font-family: 'Exo', sans-serif;
 }

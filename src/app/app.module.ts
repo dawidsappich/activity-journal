@@ -1,3 +1,4 @@
+import { MapService } from './services/map.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ActivityService } from './services/activity.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,7 +24,7 @@ import { MapViewComponent } from './map-view/map-view.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [ActivityService],
+  providers: [ActivityService, MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

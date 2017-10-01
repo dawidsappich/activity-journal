@@ -4,6 +4,8 @@ export interface IActivity {
 	comments?: string,
 	// date of recordung
 	date: Date,
+	// type of activity e.g. MTB (mountainbike), RUN etc.
+	type: string,
 	// distance in kilometer
 	distance?: number,
 	// duraion in millisekonds

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { IActivity } from './../shared/activity.model';
+import { MapService } from './../services/map.service';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-map-view',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapViewComponent implements OnInit {
 
-  constructor() { }
+  activity: any;
+
+  constructor(private _mapService: MapService, private _route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activity = this._mapService.getActivity(this._route.snapshot.params['id']);
+  }
+
+  ngAfterViewInit() {
+    this._mapService.plotActivity(this._route.snapshot.params['id']);
   }
 
 }
