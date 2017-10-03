@@ -1,1 +1,15 @@
-#mapid { height: 400px; }
+#mapid {
+	height: 400px;
+}
+
+.wrapper {
+	padding-top: 100px;
+}
+
+.info {
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.details p {
+	margin-left: 25px
+}

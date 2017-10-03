@@ -3,7 +3,7 @@ import { IActivity } from './activity.model';
 export const SAVED_ACTIVITIES: IActivity[] = [
 	{
 		id: 1,
-		title: 'Mountainbike Italien Tag 1',
+		title: 'Südtirol',
 		comments: 'Leichte Tour zum reinkommen',
 		date: new Date('09/11/2017'),
 		type: 'MTB',
@@ -13,7 +13,7 @@ export const SAVED_ACTIVITIES: IActivity[] = [
 	},
 	{
 		id: 2,
-		title: 'Mountainbike Italien Tag 2',
+		title: 'Südtirol',
 		comments: 'Schwere Bergtour',
 		date: new Date('09/12/2017'),
 		type: 'MTB',
@@ -23,7 +23,7 @@ export const SAVED_ACTIVITIES: IActivity[] = [
 	},
 	{
 		id: 3,
-		title: 'Mountainbike Italien Tag 3',
+		title: 'Südtirol',
 		comments: 'Kleine Bergtour',
 		date: new Date('09/13/2017'),
 		type: 'MTB',
@@ -33,7 +33,7 @@ export const SAVED_ACTIVITIES: IActivity[] = [
 	},
 	{
 		id: 4,
-		title: 'Mountainbike Italien Tag 4',
+		title: 'Südtirol',
 		comments: 'Kleine Bergtour mit schöner Abfahrt',
 		date: new Date('09/14/2017'),
 		type: 'MTB',
