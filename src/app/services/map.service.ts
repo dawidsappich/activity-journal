@@ -14,15 +14,13 @@ export class MapService {
   defaultCoords: number[] = [51.0, 0.09];
   defaultZoom: number = 13;
 
-  constructor() { }
+  constructor(private _activityService: ActivityService) { }
 
   getActivity(activityId: number) {
     return SAVED_ACTIVITIES.slice(0).find(run => run.id == activityId);
   }
 
   plotActivity(id: number) {
-
-    let activities = SAVED_ACTIVITIES.slice(0);
 
     var myStyles = {
       "color": "#3949AB",
@@ -41,7 +39,7 @@ export class MapService {
 
     var customLayer = L.geoJson(null, { style: myStyles });
 
-    var gpxLayer = omnivore.gpx(activities.find(activity => activity.id == id).gpxData, null, customLayer)
+    var gpxLayer = omnivore.gpx(this._activityService.getActivities().find(activity => activity.id == id).gpxData, null, customLayer)
       .on('ready', function () {
         mymap.fitBounds(gpxLayer.getBounds());
       }).addTo(mymap);
